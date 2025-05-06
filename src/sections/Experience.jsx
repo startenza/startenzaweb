@@ -96,8 +96,8 @@ const Experience = () => {
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
-          sub="💼 My Career Overview"
+          title="All cloud. No chaos. Just pure digital slay."
+          sub="⚒️ Cloud Service"
         />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
@@ -109,6 +109,20 @@ const Experience = () => {
                       <img src={card.imgPath} alt="exp-img" />
                     </div>
                   </GlowCard>
+                  {/* <GlowCard card={card}>
+                    <div>
+                      <video src={card.videoPath}  autoPlay
+  loop
+  muted
+  playsInline
+  loading="lazy"
+  preload="auto"
+  className="w-full h-auto rounded-xl" >
+                      </video>
+                    
+                    </div>
+                  </GlowCard> */}
+
                 </div>
                 <div className="xl:w-4/6">
                   <div className="flex items-start">
@@ -123,7 +137,7 @@ const Experience = () => {
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">
-                          🗓️&nbsp;{card.date}
+                          {/* 🗓️&nbsp;{card.date} */}
                         </p>
                         <p className="text-[#839CB5] italic">
                           Responsibilities

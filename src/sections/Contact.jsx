@@ -10,7 +10,8 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    message: "",
+    phone: "",
+    message: "",  
   });
 
   const handleChange = (e) => {
@@ -79,6 +80,21 @@ const Contact = () => {
                     required
                   />
                 </div>
+                
+                <div>
+                  <label htmlFor="phone">Your Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={form.phone || ""}
+                      onChange={handleChange}
+                      placeholder="What’s your phone number?"
+                      pattern="[0-9]{10}" // Optional: for basic validation (10 digits)
+                      required
+                    />
+                </div>
+
 
                 <div>
                   <label htmlFor="message">Your Message</label>
@@ -93,7 +109,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
